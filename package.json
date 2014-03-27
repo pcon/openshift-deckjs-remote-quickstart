@@ -1,22 +1,26 @@
 {
-	"name": "deckjs-remote",
-	"version": "0.1.1",
-	"description": "Remote control for deck.js",
-	"author": "Chris Jaure (http://cleverchris.com)",
-	"homepage": "https://github.com/chrisjaure/deckjs-remote",
+	"name": "openshift-deckjs-remote-quickstart",
+	"version": "1.0.0",
+	"description": "Deck.js and Deck.js remote for openshift",
+	"author": {
+		"name": "Patrick Connelly",
+		"email": "patrick@deadlypenguin.com",
+		"url": "http://deadlypenguin.com"
+	},
+	"homepage": "https://github.com/pcon/openshift-deckjs-remote-quickstart",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chrisjaure/deckjs-remote.git"
+		"url": "https://github.com/pcon/openshift-deckjs-remote-quickstart.git"
 	},
-	"scripts": {
-		"start": "server.js"
+	"engines": {
+		"node": ">= 0.6.0",
+		"npm": ">= 1.0.0"
 	},
 	"dependencies": {
 		"socket.io": "0.9",
 		"connect": "2.2"
 	},
-	"engines": {
-		"node": ">= 0.6.0"
-	},
-	"subdomain": "deckjsremote"
+	"devDependencies": {},
+	"bundleDependencies": [],
+	"main": "server.js"
 }

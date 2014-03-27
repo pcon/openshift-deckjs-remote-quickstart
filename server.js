@@ -89,7 +89,7 @@ app.use(function (req, res, next) {
 	next();
 }).use(connect['static'](__dirname + '/public'));
 
-server = http.createServer(app).listen(process.env.C9_PORT || process.argv[2] || 80);
+server = http.createServer(app).listen(process.env.OPENSHIFT_NODEJS_PORT || 8080, process.env.OPENSHIFT_NODEJS_IP);
 
 // set up the socket
 io = socketio.listen(server);
