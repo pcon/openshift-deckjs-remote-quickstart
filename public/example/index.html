@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Apex Testing for Humans</title>
+
+	<meta name="description" content="An example presentation">
+	<meta name="author" content="AUTHOR NAME GOES HERE">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<link rel="stylesheet" href="../core/deck.core.css">
+	<link rel="stylesheet" href="../extensions/remote/deckjs-remote.css">
+	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+
+	<link rel="stylesheet" id="style-theme-link" href="../themes/style/swiss.css">
+
+	<link rel="stylesheet" href="this.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/fontello.css">
+
+	<link rel="stylesheet" href="../plugins/rainbow/themes/github.css">
+
+	<script src="../modernizr.custom.js"></script>
+</head>
+<body class="introduction">
+	<header>
+		<nav>
+			<h1><a href="#">Example presentation</a></h1>
+		</nav>
+	</header>
+	<article class="deck-container">
+		<section class="slide" id="title-slide">
+			<h1>
+				<p>Example presentation</p>
+				<p style="font-size: 0.5em;">with remote control!</p>
+			</h1>
+		</section>
+
+		<section class="slide" id="how-to-use">
+			<h2>How to use</h2>
+			<ol>
+				<li><a href="http://github.com/pcon/openshift-deckjs-remote-quickstart">Follow the quickstart documentation</a></li>
+				<li>Launch the presentation with the parameter <code>?master</code></li>
+				<li>Enter password of "master"</li>
+				<li>Wait for your guests to arrive and choose "Join" on the presentation page</li>
+				<li>Profit!</li>
+			</ol>
+		</section>
+
+		<section class="slide" id="change-password">
+			<h2>How to change the default password</h2>
+			<ol>
+				<li>Get the md5sum hash for your password <code>echo -n "mynewpassword" | md5sum</code></li>
+				<li>Take that hash and update <code>extensions/remote/deckjs-remote.js</code> with the new key on line 13</li>
+			</ol>
+		</section>
+
+		<section class="slide" id="what-else">
+			<h2>What other cool things are there?</h2>
+			<p>In addtion to the stock <a href="">Deck.js</a> functionality this quickstart has:</p>
+			<pre><code data-language="java">public static myMethod() {
+	System.out.print("Code hilighting!");
+}</code></pre>
+		</section>
+
+		<section class="slide" id="questions">
+			<h2>Questions?</h2>
+			<p>Feel free to reach out to me as "pcon" on freenode, <a href="http://twitter.com/aelst">@aelst</a> on twitter, or via <a href="https://github.com/pcon">github</a></p>
+		</section>
+
+		<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+		<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+		<p class="deck-status">
+			<span class="deck-status-current"></span>
+			/
+			<span class="deck-status-total"></span>
+		</p>
+
+		<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+	</article>
+	<footer>
+		<p>Made possible by <a href="http://imakewebthings.com/deck.js/" alt="Deck.js">Deck.js</a></p>
+	</footer>
+
+	<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+	<!-- Deck Core and extensions -->
+	<script src="../core/deck.core.js"></script>
+	<script src="../extensions/remote/deckjs-remote.js"></script>
+	<script src="../extensions/hash/deck.hash.js"></script>
+	<script src="../extensions/menu/deck.menu.js"></script>
+	<script src="../extensions/status/deck.status.js"></script>
+	<script src="../extensions/navigation/deck.navigation.js"></script>
+
+	<script src="../plugins/rainbow/rainbow.js"></script>
+	<script src="../plugins/rainbow/language/java.js"></script>
+	<script src="this.js"></script>
+</body>
+</html>
