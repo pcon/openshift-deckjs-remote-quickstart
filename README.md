@@ -4,7 +4,7 @@ This quickstart will get you going with [deck.js](http://imakewebthings.com/deck
 
 Create an account at [http://openshift.redhat.com](http://openshift.redhat.com)
 
-Create the application (piggybackign on nodejs-0.10)
+Create the application (piggybacking on nodejs-0.10)
 
     rhc app create slides nodejs-0.10 --from-code=git://github.com/pcon/openshift-deckjs-remote-quickstart.git
     
