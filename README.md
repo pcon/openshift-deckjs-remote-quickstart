@@ -1,5 +1,23 @@
 This quickstart will get you going with [deck.js](http://imakewebthings.com/deck.js/) and includes the [remote deck.js](https://github.com/chrisjaure/deckjs-remote) functionality
 
+#What is it?
+
+[Deck.js](http://imakewebthings.com/deck.js/) is a framework to make HTML based presentations.  One of it's extensions [remote deck.js](https://github.com/chrisjaure/deckjs-remote) allows a presenter to control the current slide that all of the connected guests are viewing.
+
+For example, if you installed this to your openshift account and navigated to http://slides-USERNAME.rhcloud.com/example/?master and the person you were presenting to navigated to http://slides-USERNAME.rhcloud.com/example/ you would be presented with this:
+
+![Password Prompt](https://raw.githubusercontent.com/pcon/openshift-deckjs-remote-quickstart/master/docs/deck_step1.png)
+
+After the presenter enters the password (the default being "master"), the guest will be prompted to join the session
+
+![Session Prompt](https://raw.githubusercontent.com/pcon/openshift-deckjs-remote-quickstart/master/docs/deck_step2.png)
+
+Once the guest has joined the session, any slide changes that the presenter makes will be conveyed to the guest
+
+![Presentation](https://raw.githubusercontent.com/pcon/openshift-deckjs-remote-quickstart/master/docs/deck_step3.png)
+
+#How do I install it?
+
 ## Running on Openshift
 
 Create an account at [http://openshift.redhat.com](http://openshift.redhat.com)
