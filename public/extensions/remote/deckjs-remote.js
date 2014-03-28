@@ -107,7 +107,7 @@
 		var is_master = (window.location.search.search(/[\?&]master([&=]|$)/) !== -1);
 
 		key = options.key || key;
-		socket = io.connect(options.server, {port: options.port || 80});
+		socket = io.connect(options.server, {port: 8000});
 
 		socket.on('connect', function () {
 			socket.emit('join', { url: window.location.href, is_master: is_master });
