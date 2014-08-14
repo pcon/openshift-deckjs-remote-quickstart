@@ -41,5 +41,5 @@ Copy the contents of `public/example/` to a new location and edit the `index.htm
 
 ## Changing the default password
 
-1. Generate a new md5sum with your new password `echo "mynewpassword" | md5sum `
+1. Generate a new md5sum with your new password `print "mynewpassword" | md5sum`
 2. Take the hash and edit `public/extensions/remote/deckjs-remote.js` and change the hash in `key = '...'`
