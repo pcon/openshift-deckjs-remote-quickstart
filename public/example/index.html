@@ -59,7 +59,7 @@
 		<section class="slide" id="change-password">
 			<h2>How to change the default password</h2>
 			<ol>
-				<li>Get the md5sum hash for your password <code>echo -n "mynewpassword" | md5sum</code></li>
+				<li>Get the md5sum hash for your password <code>printf "mynewpassword" | md5sum</code></li>
 				<li>Take that hash and update <code>extensions/remote/deckjs-remote.js</code> with the new key on line 13</li>
 			</ol>
 		</section>
